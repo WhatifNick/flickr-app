@@ -18,12 +18,12 @@ const Header = () => (
           <Typography variant="title" color="inherit">
             Flickr App
           </Typography>
-          <Typography variant="title" color="inherit">
+          {/* <Typography variant="title" color="inherit">
             <NavLink to="/" activeClassName="is-active" exact={true}>Home</NavLink>
           </Typography>
           <Typography variant="title" color="inherit">
             <NavLink to="/images" activeClassName="is-active" exact={true}>Images</NavLink>
-          </Typography>
+          </Typography> */}
       </Toolbar>
     </AppBar>
   </div>
