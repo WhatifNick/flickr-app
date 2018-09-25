@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import ReactModal from 'react-modal';
-// import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 
 import store from '../store'
 import Centered from '../styles/Styles'
@@ -37,7 +37,7 @@ const customStyles = {
     right: "auto",
     top: "25%", // start from center
     transform: "translate(-50%,-" + "90px" + ")", // adjust top "up" based on height
-    width: "70%",
+    width: "50vw",
     maxWidth: "60rem"
   }
 };
@@ -79,6 +79,7 @@ class ImagesPage extends Component {
         <List>
           <img src={large}></img>
           <h2>{image && image.title}</h2>
+          <Button onClick={this.handleCloseModal}>Close</Button>
         </List>
       </div>
     )
