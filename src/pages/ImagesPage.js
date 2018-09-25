@@ -10,45 +10,27 @@ ReactModal.setAppElement('#root')
 
 
 const List = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-self: center;
     text-align: center;
+    padding-top: 4vw;
 `;
 
-const Button = styled.button`
-
+const Thumbnail = styled.button`
 border-radius: 50%;
-background: #3498DB;
+background: #3F51B5;
 padding: 1vw;
 color: black;
 margin: 10px;
 width: auto;
 `;
 
-const Box = styled.div`
-  height: 200px;
-  width: 200px;
-  background-color: black;
-  margin-right: 20px;
-
-
-`
-// const Button = styled.button`
-//   &:hover {
-//     border: 3px solid #f8d315;
-//   }
-// `;
 
 const customStyles = {
   content: {
-    backgroundColor: "#3498DB",
+    backgroundColor: "#3F51B5",
     border: "1px solid black",
     borderRadius: "50px",
     bottom: "auto",
-    height: "600px", // set height
+    height: "40vw", // set height
     left: "50%",
     padding: "2rem",
     position: "absolute",
@@ -90,14 +72,15 @@ class ImagesPage extends Component {
     const large = image && `https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}.jpg`;
 
     return(
-      <div>
+      <div >
         <List>
           <img src={large}></img>
-          <Box />
+          
           <div>
             <h2>{image && image.title}</h2>
           
           </div>
+          
         {/* <Image
           imagePath={large}
         />
@@ -129,12 +112,12 @@ class ImagesPage extends Component {
               const large = `https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}_b.jpg`;
               console.log(image)
             return (
-              <Button onClick={() => this.handleOpenModal(i)}>
+              <Thumbnail onClick={() => this.handleOpenModal(i)}>
                 <Image
                   imagePath={thumbnail}
                   title={image.title}
                 />
-              </Button>
+              </Thumbnail>
             )
             })}
             <ReactModal

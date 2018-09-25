@@ -3,23 +3,6 @@ import { Link } from 'react-router-dom'
 import Centered from '../styles/Styles'
 
 
-// import Background from '../images/home-background.jpg';
-
-// var sectionStyle = {
-//   width: "100%",
-//   height: "400px",
-//   backgroundImage: `url(${Background})`
-// };
-
-// class Section extends Component {
-//   render() {
-//     return (
-//       <section style={ sectionStyle }>
-//       </section>
-//     );
-//   }
-// }
-
 const HomePage = () => (
   <div className="Homepage-background">
     <Centered>
