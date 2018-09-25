@@ -4,6 +4,7 @@
 git clone git@github.com:WhatifNick/flickr-app.git
 cd flickr-app
 npm install
+npm start
 ```
 Visit at [localhost:3000](http://localhost:3000)
 
